@@ -1,0 +1,15 @@
+*.css
+gallery/
+fonts/
+images/
+scss/bootstrap
+projects/nextpage
+projects/img
+projects/demo-imgs
+projects/css
+projects/js
+projects/fonts
+css/
+documentation/
+*.config
+
