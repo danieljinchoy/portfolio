@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog - Citibike</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="gallery/main-html/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="gallery/main-html/img/favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="gallery/main-html/img/favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="gallery/main-html/img/favicon-270x270.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"></span>Daniel Choy</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Hello!</span></a></li>
+            <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>My name is Daniel</span></a></li>
+            <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>More about me,</span></a></li>
+            <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>my projects,</span></a></li>
+            <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>and my blog</span></a></li>
+            <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Let's talk!</span></a></li>
+          </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+		
+		<section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h1 class="big"><b>Predicting the Rebalancing Needs for CitiBike in NYC</b></h1>
+            <p>
+              By Daniel Choy &nbsp Dec 2020
+            </p>
+            <br>
+            <h2 class="mb-3">Introduction</h2>
+            <p>
+              <img src="images/citibike8.png" alt="" class="img-fluid">
+            </p>
+            <p>In May 2013, New York City launched CitiBike, one of the largest bike-share systems in the United States. Today, CitiBike in NYC consists of more than 1200 + active dock stations that have expanded to Brooklyn, and Jersey City. As of September 2020, despite of COVID-19, there are more than 40,000 trips every day with a total of 113M total trips taken since it was first launched. Despite CitiBike's growth, the service is not always satisfactory. For example, the massive use of the service by commuter results into the quick depletion stalls in the dock stations in the morning and the rapid exhaustion of the available stalls in the docking stations in the afternoon so that users cannot deposit more bikes. This disparity highlights the importance of finding efficient ways to manage the bike-sharing network in NYC. An effective way to enhance the CitBike system is relocating bikes from overcrowded stations to those with a shortage of bikes, which is known as rebalancing. There are multiple ways to do this: One, CitiBike can deploy a fleet of trucks to pick up and drop off bikes at different stations to balance the network. Two, CitiBike can operate a bike train that carries 12-16 bikes to pick up and drop off bikes in narrow neighborhoods. Three, CitiBike can employ bike riders to move around bikes to improve the availability of bikes and docks. CitiBike is currently utilizing these methods (visit: <a href="https://www.citibikenyc.com/blog/rebalancing-the-citi-bike-system">CitiBike</a>) for more information) in order to solve bike/dock station availability issues. However, CitiBike is still being criticized for its poor rebalancing strategy and management.<br><br></p>
+            <p>
+            <h2 class="mb-3">Objective</h2>
+              <img src="images/citibike10.png" alt="" class="img-fluid">
+            </p>
+            <p>In order to improve the current CitiBike's rebalancing strategy, this project will address two topics: Understanding and Analyzing CitiBike's Riders data and inventory status and predicting the demand for bikes and stalls in the docking stations in different locations to relocate the bikes in order to best satisfy customer's demand.</p>
+            <h2 class="mb-3 mt-5">Problem</h2>
+            <p>Ever since CitiBike was introduced, the bike share system has been constantly criticized by its customers for its poor method of stock redistribution in order to equalize the supply of bikes and stations. The massive use of bike-share system during commuting time results into quick depletion of the stations in residential areas in the morning and the rapid depletion of the stations in commercial areas in the afternoon. These unsatisfactory feedback can be reflected on many of recent CitiBike-related tweets and articles. In addition, tourists disappointment can be reflected by the high rate of negative reviews of the service on TripAdvisor (for more information, visit: <a href="https://www.tripadvisor.com/Attraction_Review-g60763-d7071917-Reviews-Citi_Bike-New_York_City_New_York.html">TripAdvisory</a>)</p>
+
+            <h2 class="mb-3 mt-5">About the Data</h2>
+            <p>For the scope of the project, our group used 3 different datasets: 1) CitiBike ridership data (2013 - 2020) from CitiBike NYC System; 2) CitiBike dock station-related data from Open Bus Data; 3) Weather data in NYC from NOAA or National Oceanic and Atmospheric Administration. We highlighted some of the basic summary statistics based on the information we had in the visualization below.</p>
+            <p>
+            <p>
+              <img src="images/citibike3.png" alt="" class="img-fluid">
+            </p>
+
+             <h2 class="mb-3 mt-5">Exploratory Data Analysis</h2>
+
+            <p><b>Ridership Analysis</b></p>
+             <p>
+              <img src="images/citibike12.png" alt="" class="img-fluid">
+             </p>
+            <p>As can be seen, during the weekdays, ridership peaks on weekdays during the morning and afternoon rush hour periods, presumably used for commuting purpose. During the weekend, riders use CitiBike mostly during the afternoon. Another graph indicates that many of the CitiBike users are subscribers (customers with membership) mostly using CitiBike less than 20 minutes.</p>
+            <p>
+
+            <p><b>Insights from Dock Station Data</b></p>
+             <p>
+              <img src="images/citibike13.png" alt="" class="img-fluid">
+             </p>
+            <p>Based on the graph above, the incoming and outgoing bike flow in general matches up decently well as you can see the average flow that also reflects the peak commute time in the city. Bike usage rate above (or bike utilization rate) was calculated as available docks over total number of docks at each station. Bike utilization is high during rush hour when people commute and drops early afternoon. In other words, there are more available bikes from 11AM to 2PM. In terms of season, bike utilization rate is relatively higher in the Fall than any other season throughout the day. </p>
+            <p>
+
+            <p><b>Seasonality Analysis</b></p>
+             <p>
+              <img src="images/citibike16.png" alt="" class="img-fluid">
+             </p>
+            <p>Next, we looked at the seasonality trends based on the rider’s data. If we look at the graph, the number of bike rides has been increasing throughout the years with the exception of early 2020. The drop in the number of rides in early 2020 can be explained by the COVID-19 effect. Luckily, in September, the number of bike rides surpassed its previous year. In terms of months, the number of rides drastically drops during winter and early spring time. Many of CitiBike users are annual subscribers and based on the graph, we can see that not a lot of normal customers are using CitiBike during the Winter, which presumably means that not a lot of tourists are using CitiBike during this time of the year. </p>
+            <p>
+              <p>
+              <img src="images/citibike17.png" alt="" class="img-fluid">
+             </p>
+             <p>
+              <img src="images/citibike18.png" alt="" class="img-fluid">
+             </p>
+            <h2 class="mb-3">Machine Learning</h2>
+              <img src="images/machinelearning.png" alt="" class="img-fluid">
+            </p>
+            <p>Prior to discussing about our models, we want to briefly go through the data processing and feature engineering process. For our data cleaning and data merging part, we dealt with missing values and re-interpreted some datasets, especially with the weather data, which NOAA had its own way of recording the temperature, precipitation, and wind speed. With the data engineering part, we generated new date features such as year, month, hour, season, minutes, time intervals, weekdays, lag features, and created new status features for both rider’s data and dock stations data.</p>
+            <p><b>K-means clustering</b></p>
+             <p>
+              <img src="images/kmeans.png" alt="" class="img-fluid">
+             </p>
+            <p>In order to identify patterns of CitiBike ridership, we used Hierarchical clustering and K means clustering with rider count information at every station at every hour of the day. The result of hierarchical clustering was not utilized in other analysis due to the fact that it does not yield clusterings that reflect the magnitude of the bike ride data. Therefore, K-means clustering was selected in place of hierarchical clustering as the input for other machine learning models. </p>
+            <p>
+            <p>The result of a three cluster K-means clustering is as follows: 1) There are three distinct groups, clustering stations by magnitude of rider count; 2) Group 0 has the lowest overall number of rider count, below average, relatively steady ride count with peak hours showing the lowest ridership, including all the stations furthest away from lower Manhattan; 3) Group 1 has a medium level of rider count (above average), but still less than group 2, scattered throughout Manhattan and Brooklyn; 3) Group 2 has the highest number of overall number of rider counts. The stations are mostly in the lower Manhattan area and has similar rider distribution as group 1, but at a bigger scale. </p>
+            <p><b>Random Forest Classification</b></p>
+             <p>
+              <img src="images/feature.png" alt="" class="img-fluid">
+             </p>
+            <p>Once we finished preprocessing the data, we trained three random forest classification models on our processed data - 1) a model predicting dock station status; 2) a model predicting incoming bike demand; 3) a model predicting outgoing bike demand in order to create a rebalancing strategy based on each dock station’s status quo when provided a date, time, and weather in the future.  We made sure to implement a train-test splitting to minimize overfitting on our training data, and tuned the models as best as we were bale to given our processing power. In addition, we had to generate new target variables. For the dock station data, we generated a dock station status variable which is classified into three different values: full alert, normal, and empty alert. When a dock station is in full alert status, it means that there are there are too many available bikes in a given dock station compared to its total number of docks (which is 75% of the total number of docks) and when a dock station is in empty alert, it means that there are very little available bikes compared to its total number of docks in a given dock station. For example, if dock station A had a total number of 20 docks, and had 16 available bikes, this dock station would be at a full alert. If the dock station had only 4 available bikes, it would be at an empty alert status. Else, the dock station would be healthy. Same with the incoming and outgoing bike demand, if there we too many bikes coming in or going out, it would be classified as high, and vice versa. </p>
+
+
+
+
+            <p>Once we had the models trained to supply predictions for dock station status, incoming bike demand, and outgoing bike demand for each station, we developed an iterative algorithm to identify which stations needed to be rebalanced out or rebalanced in. </p>
+             <p>
+              <img src="images/strategy.png" alt="" class="img-fluid">
+             </p>
+
+
+
+            <p>Any stations that our model identified as full dock status as well as having a high outgoing bike demand and low incoming bike demand were classified as in need of having bikes rebalanced out. On the other hand, any stations that our model identified as empty dock status as well low outgoing bike demand and high incoming bike demand were classified as in need of having bikes rebalanced in. </p>
+
+
+            <p>Stations that were identified as in need of having bikes brought in were paired with stations identified as in need of having bikes taken out based on the Manhattan's distance were paired together. Once these stations were paired, their dock statuses were updated in the master table and they were removed from the list of stations to be rebalanced, in order to avoid double counting. Finally, the algorithm then outputs the results of the paired list using individual dock station id numbers as identifiers. </p>
+            <p>
+              <img src="images/application.png" alt="" class="img-fluid">
+            </p>
+
+            <h2 class="mb-3">Conclusion</h2>
+            <p>For a more detailed version of this work, please visit our GitHub repository.</p>
+  
+
+
+        </div>
+      </div>
+    </section> 
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row d-flex no-gutters">
+          <div class="col-md-6 col-lg-6 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay"></div>
+              <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/profile2.png);">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">Let's Talk!</h2>
+                <p>I am a <b>detail-oriented</b> data analyst with experiences in product design and data visualization, proficient in Python, R, SQL, and Tableau. I am also a motivated <b>team player</b> with the ability to systematically approach real-world challenges and provide data-driven business insights.</p>
+                <ul class="about-info mt-4 px-md-0 px-2">
+                </ul>
+              </div>
+            </div>
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                </p>
+                <p><a href="index.html"class="btn btn-primary py-3 px-3">Take me Home</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>Daniel Choy is a detail-oriented data analyst with experiences in product design and data visualization, proficient in Python, R, SQL, and Tableau.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://github.com/danieljinchoy"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/danieljchoy/"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://nycdatascience.com/blog/author/daniel-choy/"><span class="icon-wordpress"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"></span>Home</a></li>
+                <li><a href="#"></span>About</a></li>
+                <li><a href="#"></span>Projects</a></li>
+                <li><a href="#"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Blog Posts</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"></span>CitiBike Rebalancing Strategy</a></li>
+                <li><a href="#"></span>Ames Housing Prediction</a></li>
+                <li><a href="#"></span>Google Merch Store Analysis</a></li>
+                <li><a href="#"></span>Rent the Runway Web Scraping</a></li>
+                <li><a href="#"></span>FourFourTwo Editorials</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Weehawken, NJ, USA</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1 507 301 1301</span></a></li>
+                  <li><a href="mailto:danieljinchoy@gmail.com"><span class="icon icon-envelope"></span><span class="text">danieljinchoy@gmail.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  &copy; Daniel Choy. Projects may be hidden, due to non-disclosure agreements</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
