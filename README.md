@@ -1,3 +1,3 @@
 # Website Portfolio
 
-please visit wwwdaneiljinchoy.com
+please visit wwww.daneiljinchoy.com
