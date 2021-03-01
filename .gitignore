@@ -12,4 +12,5 @@ projects/fonts
 css/
 documention/
 *.config
+*.js
 
