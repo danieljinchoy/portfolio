@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <title>Olympics</title>
+        <!--Meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="img/favicon-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="img/favicon-180x180.png" />
+        <meta name="msapplication-TileImage" content="img/favicon-270x270.png" />
+
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
+
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
+
+        <!-- IconFont CSS -->
+        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+         <!-- BM builder CSS -->
+        <link rel='stylesheet' href='css/modules-style.css' type='text/css' media='screen' />
+
+        <!-- Single Portolio CSS -->
+        <link rel='stylesheet' href='css/post-portfolio.css' type='text/css' media='screen' />
+
+        <!-- Menu icon & Header icon CSS -->
+        <link rel='stylesheet' href='css/menuicon-default.css' type='text/css' media='screen' />
+        <link rel='stylesheet' href='css/headericon-default.css' type='text/css' media='screen' />
+
+        <!-- Art Theme Main CSS -->
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+
+        <!--Custom style CSS -->
+        <link rel="stylesheet" href="css/custom3.css" type="text/css" media='screen'>
+
+        <script>
+            var photoSwipeLocalize = [];photoSwipeLocalize.push({id:"facebook", label:"Share on Facebook", url:"https://www.facebook.com/sharer/sharer.php?u={{url}}"});photoSwipeLocalize.push({id:"twitter", label:"Tweet", url:"https://twitter.com/intent/tweet?text={{text}}&url={{url}}"});photoSwipeLocalize.push({id:"pinterest", label:"Pin it", url:"http://www.pinterest.com/pin/create/button/"+ "?url={{url}}&media={{image_url}}&description={{text}}"});photoSwipeLocalize.push({id:"download", label:"Download image", url:"{{raw_image_url}}", download:true});
+            var isFilterClick = false;
+            var UxCBModGlobal = [];
+            var UxCBModGlobalAjax = "false";
+            var ajaxurl = "";
+            var JS_PATH = "/js/"
+        </script>
+
+        <style id='module-style-inline-css' type='text/css'> 
+            
+        </style>
+
+	</head>
+  
+    <body class="blog pswp-light-skin responsive-ux navi-hide navi-hide-pop2 hide-menu-desktop show-menu-icon-mobile menu_hover_default default-logo default-menu default-logo-menu-expand default-logo-menu-mobile header-sticky-none">
+
+        <div class="wrap-all">
+
+            <!--Audio Player-->
+            <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+            <!--Main wrap-->
+            <div id="wrap-outer">
+
+                <!--Header-->
+                <header id="header" class=" " data-scroll="0">
+
+                    <div id="header-main" class="header-main container-fluid"> 
+
+                        <!-- Logo -->
+                        <div class="navi-logo">
+
+                            <div class="logo-wrap">
+                                <div class="logo " id="logo">
+                                    <a class="logo-a" href="../../index.html" title="Home">
+                                        <span class="logo-text"></span>
+                                    </a>
+                                </div>    
+                            </div><!--End logo wrap-->
+
+                        </div><!--End navi-logo-->
+
+                        <!--Menu on header-->
+                        <div class="head-meta">
+
+                            <!--Menu Icon-->
+                            <div class="navi-trigger-out navi-trigger-hamburg">
+
+                                <a href="javascript:;" id="navi-trigger" class="navi-trigger">
+                                    <svg class="navi-trigger-svg svg-style02" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380">
+                                        <g class="svg-style02-line2 svg-style02-line"><rect class="svg-style02-line-rect" width="380" height="50" /></g>
+                                        <g class="svg-style02-line1 svg-style02-line"><rect class="svg-style02-line-rect" width="380" height="50" /></g>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        
+                        </div><!--End head-meta-->
+
+                    </div><!--End head-main--> 
+                    
+                </header>
+
+                <!--Expanded Menu Panel-->
+                <div id="menu-panel" class="menu-panel menu-panel-align-center menu-panel-bottom-layout-b">
+
+                    <div class="menu-panel-inn container-fluid">
+                     
+                        <nav id="navi" class="navi">
+
+                            <div id="navi-wrap">
+
+                                <ul class="menu clearfix">
+                                    <li class="nav-item"><a href="../index.html#home-section" class="nav-link"><span>Hello!</span></a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><span>&nbsp&nbsp&nbsp</span></a></li>                                
+                                    <li class="nav-item"><a href="../index.html#contact-section" class="nav-link"><span>Let's talk!</span></a></li>
+                                </ul>
+
+                            </div><!--End #navi_wrap-->
+                        </nav>
+
+                        <div id="menu-panel-bottom" class="menu-panel-bottom container-fluid ">
+
+                            <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-5">
+
+                                <div class="search-top-btn-class">
+                                    <span class="fa fa-search"></span>
+                                    <form class="search_top_form"  method="get" action="#">
+                                        <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                                    </form>
+                                </div>
+
+                            </div><!--End menu-panel-bottom-left-->
+
+                            <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-7">
+
+                                <section class="">
+            
+                                    <ul class="socialmeida clearfix">                       
+                                
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://github.com/danieljinchoy" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-github"></span> </a>
+                                        </li>
+                                                
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://www.linkedin.com/in/danieljchoy/" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-linkedin"></span> </a>
+                                        </li>
+                                                
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://nycdatascience.com/blog/author/daniel-choy/" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-wordpress"></span> </a>
+                                        </li> 
+                                                
+                                       <!--  <li class="socialmeida-li">
+                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-linkedin"></span> </a>
+                                        </li>
+                                                
+                                        <li class="socialmeida-li">
+                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-youtube"></span> </a>
+                                        </li>
+                                                
+                                        <li class="socialmeida-li">
+                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
+                                                <span class="fa fa-flickr"></span> </a>
+                                        </li> -->
+                                    </ul>
+            
+                                </section>
+
+                            </div><!--End menu-panel-bottom-right-->
+
+                        </div><!--End #menu-panel-bottom-->
+
+                    </div>
+
+                </div><!--End #menu-panel-->
+
+    			
+                <!-- Main Content Wrap -->
+        		<div id="wrap"> 
+
+                    <!-- Main Content : portfolio, text content ... -->
+        	        <div id="content">
+
+                        <div class="content_wrap_outer container-fluid bm-width-70">
+
+                            <div class="archive-title title-wrap">
+                                <div class="title-wrap-con">
+                                    <h1 class="title-wrap-tit">Evaluating Rio Olympics' Legacy of Urban Regeneration</h1>
+                                    <div class="archive-des">
+                                        Text and Sentiment Analysis on TripAdvisor Reviews
+                                    </div>
+                                    <div class="archive-des">
+                                        by Daniel Choy
+                                    </div>
+                                </div>
+                            </div><!--End archive-title-->
+
+                
+                            <div id="content_wrap" class="">
+
+                                <div class="archive-list archive-list-col1 archive-list-col1_m titlethumbdes">
+
+                                    <!--Blog item-->
+                                    <section class="archive-item">
+                                        <h2 class="archive-tit">
+                                            <a title="Post with Right Sidebar" href=""></a>
+                                        </h2>
+
+                                        <a class="archive-image" title="Poster" href="">
+                                            <img class="archive-img lazy" src="img/blank.gif" data-src="../images/poster_thessis.png" alt="Post with Right Sidebar"/>
+                                        </a>
+
+                                        <div class="arvhive-excerpt">
+                                            <p>An infographic that explains the summary of the paper </p>
+                                        </div>
+
+                                        <div class="archive-meta clearfix">
+                                            <span class="article-meta-unit article-meta-date">April, 2018</span>
+                                            <span class="article-meta-unit"></span><br>             
+                                            <span class="article-meta-unit article-meta-unit-cate archive-meta-cate clearfix">
+                                                <a href="" title="View all posts in Media" class="article-cate-a">Daniel Choy</a>
+                                            </span>
+                                        </div>
+        
+                                        <div class="social-bar">
+                                        
+
+                                    </section>
+
+                                    <!--Blog item-->
+                                    <section class="archive-item">
+                                        
+                                        <h2 class="archive-tit"><a title="Standard Post &#8211; No Sidebar" href="content-no-sidebar.html">Introduction</a></h2>
+                                        
+                                       
+                                        <div class="arvhive-excerpt">
+                                            <p>The announcement made in 2009 in Copenhagen, Denmark, that Rio de Janeiro will host the 31st Olympiad excited Brazilians. Luiz Inácio Lula da Silva, the President of Brazil at that time who had been the driving force behind the bid for years with his strong personal and vocal commitment wept uncontrollably after the announcement. “Brazil went from a second-class country to a first-class country, and today we began to receive the respect we deserve,” Lula da Silva said after the announcement. “Can you imagine how many Argentines, Uruguayans, Paraguayans and Peruvians will go to Brazil? It is not only a Rio Olympics, it is Brazil’s Olympics” (Fonseca 2009).</p>
+                                        </div>
+                                        <div class="arvhive-excerpt">
+                                            <p>Brazil’s successful bid to host the two most popular mega-sport events, FIFA World Cup in 2014 and the Olympic Games in Rio de Janeiro in 2016, were regarded as important opportunities for financial benefits, global media coverage, and place marketing. Hosting mega-sport events has become an important element in the orientation of nations to become an international or global society (Horne and Manzenreiter 2006). In the case of the Olympics, ever since the mega-sport event has been telecasted internationally , the world festival has become a stage for cities and countries to present their achievements and prides to viewers and the media (Rohde 2018). In Brazil, authorities were excited to capitalize on this global attention in order to boost exports, attract tourists, increase political influence, and legitimize urban redevelopment projects. </p>
+                                        </div>
+                                        <div class="arvhive-excerpt">
+                                            <p>It is not new in the literature that mega-sport events function as a vehicle to legitimize urban redevelopment projects in urban areas. It is also not new in the literature that hosting mega-sport events involve some of the most expensive, complex, and controversial urban redevelopment and regeneration projects that cities and nations undertake  (Baade and Matheson 2016; Gold and Gold 2008; Surborg, VanWynsberghe, and Wyly 2008; Ren 2017; Black and Bezanson 2004; Gustafson 2013; Gray and Porter 2015). In this thesis, I incorporate aspects of different literatures on urban governance and urban political economy. I specifically cover literatures on growth machines, entrepreneurial city, revanchism, and globalization to explore one of the most recent globalized urban spectacles, the Summer Rio Olympic Games. Although there have been studies on the varied motivations for staging Olympic Games and the outcomes in terms of urban redevelopment, there are not many studies that examine the Olympic-led urban regeneration in Rio. By discussing the above literatures and using Evans’ method of measuring culture-led regeneration (Evans 2005), I will examine the Olympic-led urban regeneration and the Olympic legacy in Rio. The article is divided into five main sections followed by a conclusion. Following the introduction, we trace and review the literatures on urban regimes, growth machines, entrepreneurial city, and how these literatures are connected to the rise of Olympic-led urban regeneration. Based on the discussion in the first section, the second section briefly explores the background of Brazil and the rationale behind hosting both the World Cup and the Olympics. The third and fourth section will assess whether culture-led regeneration is evident in Rio by looking at several case studies. The fifth section will review the possibility of economic regeneration by analyzing Rio Olympics’ place marketing strategy through sentiment analysis. </p>
+                                        </div>
+                                        <div class="archive-more">
+                                            <a href="mailto:danieljinchoy@gmail.com" title="Post with Right Sidebar" class="archive-more-a">Request Full Text</a>
+                                        </div>
+                                        
+                                        
+                                
+                                </div><!--End archive-list-->
+
+
+                            </div><!-- End #content_wrap-->
+
+                        </div><!-- End content_wrap_outer-->
+
+                    </div><!--End #content-->
+
+                    <!-- Footer -->
+                    <footer id="footer" class="footer-cols-layout footer-cols-layout-mobile">
+
+                        <div class="footer-info footer-horizon-left footer-horizon-left-mobile">
+                            
+                            <div class="container-fluid">
+
+                                <div class="footer-cols-item footer-cols-item-mobile">
+                                    <div class="copyright"><a href="../index.html" title="Daniel Choy">By Daniel Choy</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </div><!--End #wrap -->
+    	  
+            </div><!--End wrap-outer-->
+
+            <!-- Lightbox -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <div class="pswp__bg"></div>
+
+                <div class="pswp__scroll-wrap">
+
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+
+                    <div class="pswp__ui pswp__ui--hidden">
+
+                        <div class="pswp__top-bar">
+
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+
+                    </div>
+
+                </div><!--End pswp__scroll-wrap-->
+
+            </div><!--End pswp-->
+
+        </div><!--End wrap-all-->
+        
+        <div id="get-scroll-width"></div>
+
+        <!-- jQuery Library -->
+        <script src='js/library/jquery.min.js'></script>
+        <!-- Underscore -->
+        <script src='js/underscore.min.js'></script>
+        <!-- Modernizr -->
+        <script src='js/modernizr-custom.js'></script>
+        <!-- Waypoints Plugin -->
+        <script src='js/jquery.waypoints.min.js'></script>
+        <!-- ImageLoaded Plugin-->
+        <script src='js/imagesloaded.pkgd.min.js'></script>
+        <!-- isotope Plugin -->
+        <script src='js/isotope.pkgd.min.js'></script>
+        <!-- Packery layout mode -->
+        <script src='js/packery-mode.pkgd.min.js'></script>
+        <!-- Photoswipe Plugin -->
+        <script src='js/photoswipe.min.js'></script>
+        <!-- Photoswipe Plugin UI -->
+        <script src='js/photoswipe-ui-default.min.js'></script>
+        <!-- OWL Carousel Plugin -->
+        <script src='js/owl.carousel.min.js'></script>
+        <!-- Lazy Load Plugin-->
+        <script src='js/lazyload.min.js'></script>
+        <!-- jplayer Plugin -->
+        <script src='js/jquery.jplayer.min.js'></script>
+        <!-- Modules Global js-->
+        <script src='js/modules-global.js'></script>
+        <!-- Text Module js-->
+        <script src='js/mod/text.js'></script>
+        <!-- Single Image Module js-->
+        <script src='js/mod/single-image.js'></script>
+        <!-- Slide Module js-->
+        <script src='js/mod/slider.js'></script>
+        <!-- Grid Module js-->
+        <script src='js/mod/grid.js'></script>
+        <!-- Masonry Grid Module js-->
+        <script src='js/mod/masonry-grid.js'></script>
+        <!-- Embed Module js-->
+        <script src='js/mod/embed.js'></script>
+        <!-- Contact Form Module js-->
+        <script src='js/mod/contact-form.js'></script>
+        <!-- Single Portfolio js -->
+        <script src='js/portfolio-2col.js'></script>
+        <!-- Theme main js -->
+        <script src='js/custom.theme.js'></script>
+
+    </body>
+</html>
